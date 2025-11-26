@@ -1,0 +1,1943 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto/static/Roboto-Thin.ttf);
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto/static/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto/static/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto/static/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto/static/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: 'Forum';
+    src: url(../assets/fonts/Forum/Forum-Regular.ttf);
+    font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    overflow-x: hidden;
+}
+
+body, header, main, footer, section{
+    margin: 0;
+}
+
+.dark-section{
+    background-color: rgb(3, 3, 3);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.section-title{
+    font-family: 'Forum';
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 5px;
+}
+
+.dark-section-title{
+    color: rgb(255, 255, 255);
+    
+}
+
+.light-section-title{
+    color: rgb(157, 134, 101)
+
+}
+
+.dark-section-description{
+    color: rgb(255, 255, 255);
+    letter-spacing: 0px;
+}
+
+header{
+    background-color: rgb(3, 3, 3);
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 199px;
+    max-height: 33px;
+}
+
+.logo-icon{
+    background-image: url(../assets/svg/logo.svg);
+    background-size: auto;
+    width: 49px;
+    height: 26px;
+}
+
+.logo-text{
+    color: rgb(255, 255, 255);
+    font-family: 'Forum';
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 775px;
+    height: 26px;
+    padding: 0;
+}
+
+.nav-link{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+
+
+
+
+.nav-link:hover{
+    color: rgb(157, 134, 101);
+    
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.link-arrow{
+    display: none;
+}
+
+.adaptive-menu-img-container{
+    display: none;
+}
+
+.adaptive-menu-social-list{
+    display: none;
+}
+
+.welcome-container{
+    background-image: url(../assets/img/welcome-bacground-img.jpg), 
+                    url(../assets/img/welcome-bacground-img-2.jpg),
+                    url(../assets/img/welcome-bacground-img-3.jpg),
+                    url(../assets/img/welcome-bacground-img-4.jpg),
+                    url(../assets/img/welcome-bacground-img-5.jpg);
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    min-height: 810px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0;
+    
+}
+
+.welcome-content{
+    margin-bottom: 272px;
+    max-width: 598px;
+}
+
+.welcome-title{
+    margin-bottom: 0;
+}
+
+.welcome-description{
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 75px;
+
+}
+
+.welcome-button{
+    display: inline-block;
+    background-color: rgb(113, 7, 7);
+    min-width: 360px;
+    min-height: 75px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 75px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease-in-out;
+}
+
+.welcome-button:hover{
+    background-color: rgb(157, 134, 101);
+}
+
+
+.welcome-slider{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    min-height: 120px;
+    background-color: black;
+}
+
+.welcome-slider p{
+    font-weight: 400;
+}
+
+.welcome-slider-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+}
+
+.welcome-slider-item{
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.welcome-slider-item:hover{
+    background-color: rgba(210, 177, 131, 1);
+    cursor: pointer;
+}
+
+.checked{
+    background-color: rgba(210, 177, 131, 1);
+}
+
+.welcome-slider-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.welcome-slider-btn svg path{
+    transition: all 0.5s ease-in-out;
+}
+
+.welcome-slider-btn:hover svg path{
+    fill: rgba(210, 177, 131, 1);
+}
+
+
+
+.underline-title{
+    position: relative;
+}
+
+.underline-title::after{
+    content: "";
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: rgb(113, 7, 7);
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 75px;
+    column-gap: 60px;
+    margin-top: 105px;
+}
+
+.card{
+    display: block;
+}
+
+.card:hover .card-underline-title::after{
+    width: 100%;
+    
+}
+
+
+.card-title{
+    font-family: 'Forum';
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin:22px 0;
+}
+
+.card-underline-title{
+    position: relative;
+}
+
+.card-underline-title::after{
+    content: "";
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    width: 68%;
+    height: 3px;
+    background-color: rgb(113, 7, 7);
+    transition: all 0.5s ease-in-out;
+}
+
+.card-description{
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.second-card-description{
+    font-weight: 100;
+    font-size: 18px;
+    margin: 0;
+}
+
+.explore-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+
+.explore-content-container{
+    max-width: 660px;
+    
+}
+
+.explore-descriptions{
+    margin-top: 110px;
+    line-height: 38.5px;
+}
+
+.yellow-text{
+    color: rgb( 202, 170, 125);
+}
+
+.explore-slider{
+    max-width: 50%;
+
+    min-width: 720px;
+    min-height: 700px;
+    display: grid;
+    
+}
+
+.top-img-slider{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 1;
+}
+
+.bottom-img-slider{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    z-index: 0;
+}
+
+.video-text-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.video-title-subscription{
+    max-width: 50%;
+    line-height: 38.5px;
+    margin: 5px 0;
+}
+
+.video-poster{
+    display: block;
+    margin-top: 10px;
+}
+
+.player{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    min-height: 85px;
+}
+
+.player-btn{
+    border: none;
+    background: none;
+}
+
+.player-btn:hover{
+    cursor: pointer;
+}
+
+.player-btn svg path{
+    transition: all 0.3s ease-in-out;
+}
+
+.player-btn:hover svg path{
+    fill: rgba(152, 152, 152, 1);
+    
+}
+
+.progress-video{
+    min-width: 929px;
+    height: 8px;
+    margin: 0;
+    outline: none;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #710707 0%, #710707 0%, #C4C4C4 0%, #C4C4C4 100%);
+}
+
+
+.progress-video::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: white;
+}
+
+.progress-volume{
+    min-width: 155px;
+    height: 8px;
+    margin: 0;
+    outline: none;
+    -webkit-appearance: none;
+    background: linear-gradient(to right, #710707 0%, #710707 40%, #C4C4C4 40%, #C4C4C4 100%);
+}
+
+
+.progress-volume::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: white;
+}
+
+.img-slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.img-slider-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 200px;
+    margin: 40px auto 0 auto;
+}
+
+.slider-controls-item{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: rgb(153, 153, 153);
+    transition: all 0.5s ease-in-out;
+}
+
+.slider-controls-item:first-of-type{
+    background-color: rgb(87, 87, 87);
+}
+
+.slider-controls-item:hover{
+    background-color: rgb(87, 87, 87);
+    cursor: pointer;
+}
+
+.slider-btn{
+    border: none;
+    background: none;
+    max-height: 12px;
+}
+
+.slider-btn img{
+    transition: all 0.5s ease-in-out;
+}
+
+.slider-btn:hover img{
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+.gallery-section-container{
+    padding-bottom: 0;
+}
+
+.gallery-container{
+    max-height: 1960px;
+    overflow-y: hidden;
+    margin-top: 80px;
+}
+
+.gallery-container-gradient{
+    position: relative;
+}
+
+.gallery-container-gradient::after{
+    content: "";
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+
+}
+
+.gallery-inner-container{
+    min-height: 2996px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 456px));
+    
+    grid-column-gap: 36px;
+}
+
+.gallery-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+}
+
+.gallery-column:last-of-type, .gallery-column:first-of-type{
+    margin-top: 50px;
+}
+
+.gallery-item{
+    width: 456px;
+}
+
+
+
+.buy-tickets-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    min-width: 46%;
+
+}
+
+.container .buy-tickets-content-container{
+    margin-top: 105px;
+}
+
+.buy-tickets-content-container .buy-tickets-content-container{
+    margin-top: 0;
+}
+
+.buy-tickets-img-container{
+    background-image: url(../assets/img/buy-tickets-img.jpg);
+    width: 720px;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+}
+
+.ticket-subtitle{
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0 0 50px 0;
+}
+
+.ticket-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.ticket-type-button{
+    
+    accent-color:black;
+    margin-bottom: 23px;
+    
+}
+
+.ticket-type-button input{
+    width: 17px;
+    height: 17px;
+}
+
+.ticket-type-button label{
+    cursor: pointer;
+    user-select: none;
+    padding-left: 10px;
+}
+
+
+.amount{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    
+}
+
+.amount-title{
+    margin-bottom: 25px;
+}
+
+
+
+.amount p{
+    margin: 0;
+    margin-bottom: 15px;
+    
+}
+
+.number-ticket{
+    display: inline;
+    text-align: center;
+    max-width: 33%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    border: none;
+    margin-left: 25px;
+}
+
+.tickets-btn{
+    min-width: 144px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tickets-btn button{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 32px;
+    border: none;
+    background: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.tickets-btn button:hover{
+    color: rgb(157, 134, 101);
+    cursor: pointer;
+}
+
+.tickets-price{
+    margin: 35px 0 60px 0;
+    letter-spacing: 1.65px;
+}
+
+.tickets-buy-btn{
+    background-color: black;
+    border: none;
+    border-radius: 1px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 22px;
+    min-width: 175px;
+    min-height: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.tickets-buy-btn:hover{
+    background-color: rgb(157, 134, 101);
+    cursor: pointer;
+}
+
+
+
+.parallax-container{
+    background-image: url(../assets/img/parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+}
+
+
+.contacts-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 105px;
+}
+
+.contacts-content-title{
+    font-weight: 500;
+    font-size: 28px;
+    max-width: 227px;
+    margin: 0 0 50px 0;
+}
+
+.contacts-list{
+    padding: 0;
+}
+
+.contacts-item{
+    
+    margin: 25px 0;
+    
+}
+
+.contacts-item a{
+    transition: all 0.5s ease-in-out;
+}
+
+.contacts-item a:hover{
+    color: rgb(157, 134, 101);
+}
+
+footer{
+    overflow: hidden;
+}
+
+.footer-container{
+    padding: 80px 0 25px 0;
+}
+
+.top-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    min-width: 48.5%;
+}
+
+.footer-nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    row-gap: 12px;
+    column-gap: 170px;
+    height: 135px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+.social-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 22.5px;
+    padding-left: 0;
+    margin-bottom: 5px;
+
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 100%;
+    min-width: 46px;
+    min-height: 46px;
+    transition: all 0.5s ease-in-out;
+}
+
+.social-link:hover {
+    border: 1px solid rgb(157, 134, 101);
+}
+
+.social-img path{
+    transition: all 0.5s ease-in-out;
+}
+
+.social-link:hover .social-img path{
+    fill: rgb(157, 134, 101);
+}
+
+
+.underline-footer{
+    position: relative;
+}
+
+.underline-footer::after{
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -50vw;
+    width: 150vw;
+    height: 3px;
+    background-color: rgb(102, 102, 102);
+}
+
+.bottom-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.footer-description{
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-description:hover{
+    color: rgb(157, 134, 101);
+    cursor: pointer;
+}
+
+@media (max-width:1919px) {
+
+    body{
+        font-size: 20px;
+    }
+
+    .section{
+        padding: 0 20px;
+    }
+
+    .container{
+        padding: 55px 0 60px 0;
+    }
+
+    .section-title{
+        font-size: 50px;
+        letter-spacing: 5px;
+        line-height: 90px;
+    }
+
+    .underline-title::after{
+        width: 100%;
+        bottom: 30px;
+    }
+
+    .header-container{
+        padding: 45px 20px 50px 20px;
+    }
+    
+
+    .adaptive-menu-container{
+        box-sizing: border-box;
+        visibility: hidden;
+        position: absolute;
+        left: -350px;
+        top: 128px;
+        width: 297px;
+        height: 510px;
+        background-color: black;
+        padding: 35px 55px;  
+        z-index: 50;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 25px;
+        margin: 0; 
+        width: 100%;
+        min-width: none;
+        height: auto;
+        
+    }
+
+    .open{
+        transition: all 0.5s ease-in-out;
+    }
+
+    .adaptive-menu-container.open{  
+        visibility: visible;
+        transform: translateX(350px);
+        
+
+    }
+
+    
+
+    .nav-item{
+        width: 122px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .adaptive-menu-container .nav-link{
+        font-size: 20px;
+    }
+
+    .link-arrow{
+        display: inline;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .link-arrow svg path{
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-item:hover .link-arrow{
+        
+        transform: translateX(30px);
+    }
+
+    .nav-item:hover .link-arrow svg path{
+        fill: rgb(157, 134, 101);
+    }
+
+    .nav-item:hover .nav-link{
+        color: rgb(157, 134, 101);
+        
+    }
+    
+
+    .burger-nav{
+        width: 32px;
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .burger-nav.active .burger-line:first-of-type{
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger-nav.active .burger-line:first-of-type + .burger-line{
+        transform:  rotate(-45deg);
+    }
+
+    .burger-nav.active .burger-line:last-of-type{
+        transform: translateY(150vw);
+        visibility: hidden;
+    }
+
+    .welcome-content.open{
+        display: none;
+    } 
+
+    .burger-line{
+        display: block;
+        width: 32px;
+        background-color: #ffffff;
+        height: 2px;
+        padding: none;
+        margin: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .burger-nav:hover{
+        cursor: pointer;
+    }
+
+    .burger-nav:hover .burger-line{
+        background-color: rgb(157, 134, 101);
+    }
+
+
+    .welcome-container{
+        background-size:70%;
+        min-height: 585px;
+        display: grid;
+        padding: 0;
+    }
+
+    .welcome-sction .container{
+       
+    }
+
+    .welcome-content{
+        max-width: 450px;
+        margin-bottom: 0;
+        grid-column: 1/3;
+        margin-bottom: 20px;
+    }
+
+    .welcome-description{
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .welcome-button{
+        min-width: 300px;
+        min-height: 60px;
+        line-height: 60px;
+
+    }
+
+    .welcome-slider{
+        box-sizing: border-box;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 700px;
+        
+    }
+
+    .welcome-slider p{
+        margin-left: 180px;
+    }
+
+    .welcome-slider-list{
+        width: 160px;
+    }
+
+    .welcome-slider-item{
+        width: 12px;
+        height: 12px;
+    }
+
+    .welcome-slider-controls{
+        margin-right: 30px;
+    }
+
+    .card-container{
+        margin-top: 75px;
+        column-gap: 108px;
+        row-gap: 60px;
+        justify-content: center;
+    }
+
+    .card{
+        width: 330px;
+    }
+    
+    .card-img{
+        width: 100%;
+    }
+
+    .card-title{
+        font-size: 28px;
+        letter-spacing: 3px;
+        margin: 20px 0;
+    }
+
+    .card-underline-title::after{
+        width: 45%;
+        height: 2px;
+        bottom: 10px;
+    }
+
+    
+
+    .second-card-description{
+        font-size: 16px;
+    }
+
+    .explore-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .explore-content-container{
+        min-width: 100%;
+    }
+
+    .explore-descriptions{
+        margin-top: 75px;
+    }
+
+    .dark-section-description{
+        margin: 0;
+        line-height: 35px;
+    }
+
+
+    .last-explore-description{
+        display: none;
+    }
+
+    .explore-slider{
+        margin: 65px auto 0 auto;
+    }
+
+    .video-text-container h2{
+        margin-bottom: 20px;
+    }
+
+    .video-title-subscription{
+        display: none;
+    }
+
+    .video-poster{
+        width: 100%;
+    }
+
+    .player{
+        min-height: 60px;
+        justify-content: space-evenly;
+    }
+
+    .progress-video{
+        min-width: 57.317%;
+        height: 5px;
+    }
+
+    .progress-video::-webkit-slider-thumb{
+        width: 13px;
+        height: 13px;
+    }
+
+    .progress-volume{
+        min-width: 143px;
+        height: 5px;
+    }
+
+    .progress-volume::-webkit-slider-thumb{
+        width: 13px;
+        height: 12px;
+    }
+
+    .player-btn img{
+        width: 26px;
+    }
+
+    .pause-btn img{
+        width: 23px;
+        height: 29px;
+    }
+
+    .img-slider img{
+        width: 30.488%;
+    }
+
+    .slider-btn{
+        padding: 0;
+    }
+
+    .gallery-section-container{
+        padding-bottom: 0;
+    }
+
+    .gallery-container{
+        margin-top: 50px;
+        max-height: 1265px;
+        
+    }
+
+    .gallery-item{
+        width: 100%
+    }
+
+    .buy-tickets-img-container{
+        width: 71.138%;
+        height: 440px;
+    }
+
+    .container .buy-tickets-content-container{
+        margin-top: 75px;
+    }
+
+    .ticket-type{
+        display: none;
+    }
+
+    .buy-tickets-content-container .buy-tickets-content-container{
+        display: block;
+        min-width: 10%;
+        margin-top: 0px;
+        margin-right: 30px;
+    }
+
+    .amount{
+        align-items: start;
+    }
+    
+    .tickets-btn-container{
+        font-size: 22px;
+    }
+
+    .tickets-btn{
+        min-width: 169px;
+        min-height: 44px;
+        margin-bottom: 25px;
+    }
+
+    .ticket-subtitle{
+        margin-top: 0;
+    }
+
+    .tickets-price{
+        margin-bottom: 65px;
+    }
+
+    .parallax-container{
+        
+        background-position-x: center;
+    }
+
+    .contacts-content-container{
+        margin-top: 75px;
+    }
+
+    .contacts-content-container img{
+        width: 70.528%;
+        min-height: 454px;
+    }
+
+    .contacts-content-title{
+        font-size: 24px;
+        max-width: 185px;
+        margin-bottom: 34px;
+
+    }
+
+    .contacts-item{
+        margin: 13px 0;
+    }
+
+    footer{
+        padding: 0 20px;
+    }
+
+    .footer-container{
+        padding: 55px 0 30px;
+    }
+
+    .footer-nav-list{
+        column-gap: 85px;
+        margin-top: 10px;
+        margin-left: 40px;
+        height: 130px;
+    }
+
+    .footer-nav-list .a{
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .social-list{
+        column-gap: 25px;
+    }
+
+
+}
+
+@media (max-width:1023px){
+
+    body{
+        font-size: 18px;
+    }
+
+    .container{
+        padding-top: 40px;
+    }
+
+    .header-container{
+        padding: 40px 20px
+    }
+
+    .adaptive-menu-container{
+        box-sizing: border-box;
+        left: -100%;
+        top: 113px;
+        width: 100%;
+        height: 861px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+        align-items: center;
+        padding: 35px 55px 35px 55px;
+    }
+
+    .adaptive-menu-container.open{     
+        transform: translateX(100%);
+    }
+
+    .nav-list{
+        max-height: 260px;
+        gap: 23px;
+    }
+
+    .adaptive-menu-underline{
+        position: relative;
+        width: 100%;
+    }
+
+    .adaptive-menu-underline::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgb(102, 102, 102);
+    }
+
+    .adaptive-menu-social-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:25px;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .adaptive-menu-container .nav-link{
+        font-size: 20px;
+    }
+
+    .adaptive-menu-img-container{
+        display: grid;
+        grid-template-columns: 2;
+        gap: 20px;
+        width: 100%;
+        
+    }
+
+    .adaptive-menu-img{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 194px;
+        width: 100%;
+    }
+
+    .adaptive-menu-img:first-of-type{
+        background-image: url(../assets/img/adaptive-menu-768-img-2.jpg);
+        max-height: 161px;
+    }
+
+    .adaptive-menu-img:first-of-type + .adaptive-menu-img{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-image: url(../assets/img/adaptive-menu-768-img.jpg); 
+        
+    }
+
+    .adaptive-menu-img:last-of-type{
+        background-image: url(../assets/img/adaptive-menu-768-img-3.jpg);
+        max-height: 161px;
+    }
+
+
+
+    .welcome-container{
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .welcome-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-description{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .welcome-img-container{
+        background-image: url(../assets/img/welcom-slider-1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        min-height: 546px;
+    }
+
+    .welcome-button{
+        display: none;
+    }
+
+    .section-title{
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .welcome-slider{
+        min-height: 100px;
+        justify-content: center;
+        gap: 45px;
+    }
+
+    .welcome-slider-controls{
+        margin: 0;
+    }
+
+    .welcome-slider p{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .card-container{
+        margin-top: 65px;
+        column-gap: 56px;
+        row-gap: 40px;
+    }
+
+    .underline-title::after{
+        bottom: 10px;
+    }
+
+    .card{
+        width: 38.461%;
+    }
+
+    .card-title{
+        font-size: 22px;
+    }
+
+    .card-underline-title::after{
+        width: 53%;
+        
+    }
+
+    .explore-container{
+        padding: 40px 0 40px 0;
+    }
+    
+
+    .explore-content-container{
+        width: 100%;
+    }
+
+    .explore-descriptions{
+        display: none;
+    }
+
+    .explore-slider{
+        margin-top: 35px;
+    }
+
+    .video-poster{
+        margin-top: 0;
+    }
+
+    .player{
+        position: relative;
+        min-height: 55px;
+    }
+
+    .progress-video{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .progress-volume{
+        width: 66.942%;
+    }
+
+    .img-slider{
+        margin-top: 20px;
+    }
+
+    .img-slider :last-child{
+        display: none;
+    }
+
+    .img-slider img{
+        width: 48.626%;
+    }
+
+    .img-slider-controls{
+        width: 190px;
+        margin-top: 20px;
+    }
+
+    .gallery-container{
+        max-height: 1080px;
+        margin-top: 40px;
+    }
+
+    .gallery-inner-container{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .gallery-column:last-of-type{
+        display: none;
+        
+    }
+
+    .container .buy-tickets-content-container {
+        margin-top:65px
+    }
+
+    .buy-tickets-content-container .buy-tickets-content-container{
+        margin: 0;
+    }
+
+    .buy-tickets-img-container{
+        width: 60.989%;
+        height: 340px;
+    }
+
+    .amount{
+        margin-right: 50px;
+    }
+
+    .amount-title{
+        margin-bottom: 35px;
+    }
+
+    .tickets-btn-container p{
+        margin-bottom: 10px;
+    }
+
+    .tickets-price{
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .parallax-container{
+        height: 300px;
+    }
+
+    .contacts-content-container{
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .contacts-content-text{
+        margin-bottom: 25px;
+    }
+
+    .contacts-content-title{
+        font-size: 20px;
+        max-width: 155px;
+        margin-bottom: 40px;
+    }
+
+    .contacts-content-container img{
+        width: 100%;
+        min-height: 476px;
+    }
+
+    .footer-container{
+        padding-bottom: 10px;
+    }
+
+    .top-footer-container{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .footer-nav-list{
+        max-height: 121px;
+        margin-left: 100px;
+        margin-bottom: 25px;
+        column-gap: 130px;
+        
+    }
+
+    .footer-nav-list .nav-link{
+        font-size: 18px;
+    }
+
+    .social-list{
+        margin-left: 300px;
+    }
+
+    .underline-footer::after{
+        bottom: -35px;
+    }
+
+    .footer-description{
+        font-size: 22px;
+    }
+
+    .bottom-footer-container{
+        margin-top: 55px;
+    }
+
+    
+   
+
+}
+
+@media (max-width:767px){
+    body{
+        font-size: 16px;
+    }
+
+    .container{
+        padding-bottom: 40px;
+    }
+
+    .logo{
+        max-width: 138px;
+    }
+
+    .logo-icon{
+        width: 29px;
+        height: 16px;
+        background-size: contain;
+    }
+
+    .logo-text{
+        font-size: 16px;
+    }
+
+    .section-title{
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .adaptive-menu-container{
+        height: 544px;
+        padding-top: 25px;
+    }
+
+    .adaptive-menu-img-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 17px;
+    }
+
+    .adaptive-menu-img{
+        height: 95px;
+    }
+
+    .adaptive-menu-social-list{
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .welcome-container{
+        min-height: 0;
+        padding: 0;
+    }
+
+    .welcome-description{
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin-top: 25px;
+    }
+
+    .welcome-img-container{
+        min-height: 285px;
+    }
+
+    .welcome-slider{
+        width: 60.526%;
+        min-height: 80px;
+        height: 40px;
+        justify-content: space-between;
+        gap:0;
+    }
+
+    .welcome-slider p{
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        min-width: 50px;
+    }
+
+    .welcome-slider-list{
+        width: 75px;
+    }
+
+    .welcome-slider-item{
+        width: 7px;
+        height: 7px;
+    }
+    
+    .welcome-slider-btn{
+        padding: 0;
+    }
+
+    .welcome-slider-btn svg{
+        width: 20px;
+    }
+
+    .welcome-slider-controls{
+        min-width: 55px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .underline-title::after{
+        bottom: 0;
+    }
+
+    .card-container{
+        margin-top: 62px;
+    }
+
+    .card{
+        width: 280px;
+    }
+
+    .card-title{
+        font-size: 18px;
+        letter-spacing: 5px;
+        margin-bottom: 23px;
+    }
+
+    .top-img-slider, .bottom-img-slider{
+        height: 368px;
+    }
+
+    .explore-slider{
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        min-height: 0;
+        margin-top: 40px;
+    }
+
+    .explore-slider img{
+        width: 100%;
+    
+    }
+
+    .player{
+        justify-content: space-around;
+    }
+
+    .player-btn svg{
+        width: 18px;
+    }
+
+    .pause-btn svg{
+        width: 14px;
+    }
+
+    .progress-volume{
+        width: 52.631%;
+    }
+
+    .progress-video, .progress-volume{
+        height: 4px;
+    }
+
+    .progress-video::-webkit-slider-thumb, .progress-volume::-webkit-slider-thumb{
+        height: 10px;
+        width: 10px;
+    }
+
+    .img-slider{
+        margin-top: 40px;
+    }
+
+    .img-slider img{
+        width: 47.368%;
+    }
+
+    .img-slider-controls{
+        width: 174px;
+        margin-top: 40px;
+    }
+
+    .slider-controls-item{
+        height: 8px;
+        width: 8px;
+    }
+
+    .slider-btn{
+        max-height: 8px;
+    }
+
+    .slider-btn img{
+        height: 8px;
+        margin-bottom: 4px;
+    }
+
+    .gallery-section-container{
+        padding-bottom: 0;
+    }
+
+    .gallery-container{
+        max-height: 637px;
+    }
+
+    .container .buy-tickets-content-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 62px;
+    }
+
+    .buy-tickets-content-container .buy-tickets-content-container{
+        margin-top: 40px;
+    }
+
+    .buy-tickets-img-container{
+        width: 100%;
+        height: 160px;
+    }
+
+    .amount{
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .ticket-subtitle{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .tickets-btn-container p{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .tickets-btn{
+        margin-bottom: 20px;
+    }
+
+    .tickets-price{
+        margin-top: 20px;
+        letter-spacing: normal;
+        margin-bottom: 40px;
+    }
+
+    .tickets-buy-btn{
+        font-size: 16px;
+    }
+
+    .contacts-content-title{
+        font-size: 16px;
+        max-width: 124px;
+    }
+
+    .contacts-item{
+        margin: 15px 0;
+    }
+
+    .top-footer-container{
+        align-items: center;
+    }
+
+    .contacts-content-container img{
+        min-height: 248px;
+    }
+
+    .footer-container{
+        padding-top: 32px;
+        padding-bottom: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        min-width: 100%;
+        min-height: 135px;
+    }
+
+    .footer-content .navigation{
+        width: 100%;
+    }
+
+    .footer-nav-list{
+        margin: 0;
+        min-width: 100%;
+        height: 68px;
+        column-gap: 75px;
+        
+        
+    }
+
+    .footer-nav-list .nav-item{
+        max-width: 77px;
+    }
+
+    .social-list{
+        margin-top: 40px;
+        margin-left: 0;
+        column-gap: 5px;
+    }
+
+    .footer-nav-list .nav-link{
+        font-size: 16px;
+    }
+
+    .bottom-footer-container{
+        margin-top: 60px;
+    }
+
+    .bottom-footer-container p+a{
+        display: none;
+    }
+
+    .footer-description{
+        font-size: 16px;
+        letter-spacing: 2px;
+        line-height: 22px;
+    }
+
+    
+
+
+}
+
+
