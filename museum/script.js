@@ -40,18 +40,7 @@ window.onclick = function(e){
 //   }
 // })
 
-const progress_video = document.querySelector('.progress-video');
-const progress_volume = document.querySelector('.progress-volume');
 
-progress_video.addEventListener('input', function() {
-  const value = this.value;
-  this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #C4C4C4 ${value}%, #C4C4C4 100%)`
-})
-
-progress_volume.addEventListener('input', function() {
-  const value = this.value;
-  this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #C4C4C4 ${value}%, #C4C4C4 100%)`
-})
 
 
 var ticket_price = 20;
@@ -91,4 +80,62 @@ for (let i = 0; i < ticket_type_btn.length; i++){
 //   tickets_final_price.innerHTML = (ticket_input_1 + ticket_input_2 / 2) * ticket_price;
 // }
 
+const video = document.getElementById('main-video')
+const pause_btn = document.getElementsByClassName('pause-btn')
+const progress_video = document.querySelector('.progress-video');
+const progress_volume = document.querySelector('.progress-volume');
+
+progress_video.addEventListener('input', function() {
+  const value = this.value;
+  this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #C4C4C4 ${value}%, #C4C4C4 100%)`
+})
+
+progress_video.addEventListener('change', function(){
+  video.currentTime = (progress_video.value * video.duration) / 100
+})
+
+progress_volume.addEventListener('input', function() {
+  const value = this.value;
+  this.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #C4C4C4 ${value}%, #C4C4C4 100%)`
+})
+
+video.addEventListener('timeupdate', function(){
+  progress_video.value = (video.currentTime / video.duration) * 100
+})
+
+video.addEventListener('click', function(){
+  if (video.paused){
+    video.play()
+
+  }
+  else{
+    video.pause()
+  }
+
+})
+
+pause_btn[0].addEventListener('click', function(){
+  if (video.paused){
+    video.play()
+    
+  }
+  else{
+    video.pause()
+  }
+
+})
+
+const explore_slider = document.querySelector('.explore-slider');
+const image_after_wrap = document.querySelector('.bottom-img-slider');
+const image_after = document.querySelector('.bottom-img-slider img');
+const explore_range_btn = document.querySelector('.explore-input-range');
+var explore_slider_width = explore_slider.clientWidth;
+let range_value = explore_range_btn.value;
+image_after_wrap.style.width = `${range_value}%`;
+
+image_after.style.width = explore_slider_width + 'px';
+explore_range_btn.addEventListener('input', function(){
+  let range_value = explore_range_btn.value;
+  image_after_wrap.style.width = `${range_value}%`;
+})
 
