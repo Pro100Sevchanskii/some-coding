@@ -174,11 +174,8 @@ a{
 }
 
 .welcome-container{
-    background-image: url(../assets/img/welcome-bacground-img.jpg), 
-                    url(../assets/img/welcome-bacground-img-2.jpg),
-                    url(../assets/img/welcome-bacground-img-3.jpg),
-                    url(../assets/img/welcome-bacground-img-4.jpg),
-                    url(../assets/img/welcome-bacground-img-5.jpg);
+    background-image: url(../assets/img/welcome-bacground-img.jpg);
+                    
     background-position: 100% 0%;
     background-repeat: no-repeat;
     min-height: 810px;

@@ -83,6 +83,7 @@ for (let i = 0; i < ticket_type_btn.length; i++){
 const video = document.getElementById('main-video')
 const pause_btn = document.getElementsByClassName('pause-btn')
 const volume_btn = document.querySelector('.volume-btn')
+const fullscreen_btn = document.querySelector('.full-screen-btn')
 const progress_video = document.querySelector('.progress-video');
 const progress_volume = document.querySelector('.progress-volume');
 
@@ -193,6 +194,14 @@ pause_btn[0].addEventListener('click', function(){
     pause_btn[0].innerHTML = '<svg width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23 15.5053L0 0C0 23.3683 0 11.8996 0 31L23 15.5053Z" fill="#B3B3B3"/> </svg>'
   }
 
+})
+
+fullscreen_btn.addEventListener('click', function(){
+  if(!document.fullscreenElement){
+     video.requestFullscreen().catch(err => {
+            console.error(`Ошибка при запросе полноэкранного режима: ${err.message}`);
+        });
+  }
 })
 
 const explore_slider = document.querySelector('.explore-slider');
