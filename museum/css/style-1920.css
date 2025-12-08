@@ -401,21 +401,24 @@ a{
 .explore-input-range::-moz-range-thumb{
     border: none;
     -moz-appearance: none;
-    width: 7px;
+    width: 39px;
     height: 100%;
-    background: #ffffff;
+    background: url(../assets/svg/explore\ slider.svg);
     border-radius: 5px;
     cursor: e-resize;
+    
+    
 }
 
 .explore-input-range::-webkit-slider-thumb{
     border: none;
     -webkit-appearance: none;
-    width: 7px;
+    width: 39px;
     height: 700px;
-    background: #ffffff;
+    background: url(../assets/svg/explore\ slider.svg);
     border-radius: 5px;
     cursor: e-resize;
+    
 }
 
 

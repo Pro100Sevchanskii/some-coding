@@ -166,7 +166,9 @@ video.addEventListener('timeupdate', function(){
   progress_video.value = (video.currentTime / video.duration) * 100
   const value = progress_video.value;
   progress_video.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #C4C4C4 ${value}%, #C4C4C4 100%)`
-
+  if (value==100){
+    pause_btn[0].innerHTML = '<svg width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23 15.5053L0 0C0 23.3683 0 11.8996 0 31L23 15.5053Z" fill="#B3B3B3"/> </svg>'
+  }
 })
 
 video.addEventListener('click', function(){
