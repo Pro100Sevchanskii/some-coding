@@ -160,8 +160,6 @@ volume_btn.addEventListener('click', function(){
 
 
 
-
-
 video.addEventListener('timeupdate', function(){
   progress_video.value = (video.currentTime / video.duration) * 100
   const value = progress_video.value;
@@ -170,6 +168,11 @@ video.addEventListener('timeupdate', function(){
     pause_btn[0].innerHTML = '<svg width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23 15.5053L0 0C0 23.3683 0 11.8996 0 31L23 15.5053Z" fill="#B3B3B3"/> </svg>'
   }
 })
+
+video.addEventListener('loadedmetadata', function(){
+          progress_video.value = (video.currentTime / video.duration) * 100
+          progress_video.style.background = `linear-gradient(to right, #710707 0%, #710707 ${progress_video.value}%, #C4C4C4 ${progress_video.value}%, #C4C4C4 100%)`
+        })
 
 video.addEventListener('click', function(){
   if (video.paused){
@@ -206,6 +209,76 @@ fullscreen_btn.addEventListener('click', function(){
   }
 })
 
+const video_slider = document.querySelector('.video-slider-inner');
+const video_slider_next = document.querySelector('.next-btn');
+const video_slider_before = document.querySelector('.before-btn');
+const video_slider_controls = document.querySelectorAll('.slider-controls-item');
+var position = -20.345;
+video_slider_next.addEventListener('click', function(){
+  position -= 20.345;
+  for (let i = 0; i< video_slider_controls.length; i++){
+    if(video_slider_controls[i].classList.contains('slider-controls-item-active')){
+      if(i==4){
+        video_slider_controls[i].classList.remove('slider-controls-item-active');
+        video_slider_controls[0].classList.add('slider-controls-item-active');
+        video.src = `./assets/video/video0.mp4`
+      
+        break
+      }
+      video_slider_controls[i].classList.remove('slider-controls-item-active');
+      video_slider_controls[i+1].classList.add('slider-controls-item-active');
+      video.src = `./assets/video/video${i+1}.mp4`
+      
+      
+      break
+    }
+  }
+  
+  video_slider.style.transform = `translateX(${position}%)`
+})
+
+video_slider_before.addEventListener('click', function(){
+  position += 20.345;
+  
+  for (let i = 4; i>= 0; i--){
+    if(video_slider_controls[i].classList.contains('slider-controls-item-active')){
+      if(i==0){
+        video_slider_controls[i].classList.remove('slider-controls-item-active');
+        video_slider_controls[4].classList.add('slider-controls-item-active');
+        video.src = `./assets/video/video4.mp4`
+       
+        break
+      }
+      video_slider_controls[i].classList.remove('slider-controls-item-active');
+      video_slider_controls[i-1].classList.add('slider-controls-item-active');
+      video.src = `./assets/video/video${i-1}.mp4`
+      
+      break
+    }
+  }
+  
+  video_slider.style.transform = `translateX(${position}%)`
+})
+
+
+
+for (let i = 0; i< video_slider_controls.length; i++){
+  video_slider_controls[i].addEventListener('click', function() {
+    position = -20.345 * (i+1)
+
+    video_slider.style.transform = `translateX(${position}%)`
+    for (let j = 0; j< video_slider_controls.length; j++){
+      if(video_slider_controls[j].classList.contains('slider-controls-item-active')){
+        video_slider_controls[j].classList.remove('slider-controls-item-active');
+        video_slider_controls[i].classList.add('slider-controls-item-active');
+        video.src = `./assets/video/video${i}.mp4`
+        
+      }
+    }
+  })
+}
+
+
 const explore_slider = document.querySelector('.explore-slider');
 const image_after_wrap = document.querySelector('.bottom-img-slider');
 const image_after = document.querySelector('.bottom-img-slider img');
@@ -219,4 +292,6 @@ explore_range_btn.addEventListener('input', function(){
   let range_value = explore_range_btn.value;
   image_after_wrap.style.width = `${range_value}%`;
 })
+
+
 
