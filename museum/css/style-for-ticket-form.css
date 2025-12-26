@@ -1,0 +1,242 @@
+.booking-tickets-container{
+    max-width: 1440px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 95px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.booking-tickets-container-inner{
+    max-width: 970px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
+.booking-interactive-container{
+    max-width: 400px;
+    
+}
+
+.booking-logo-container svg{
+    width: 85px;
+    height: 41px;
+}
+
+.booking-tickets-title{
+    font-family: 'Forum';
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    
+}
+
+.booking-tickets-description{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    color: #710707;
+    margin-top: 15px;
+}
+
+
+
+.booking-form-container{
+    margin-top: 73px;
+}
+
+.booking-tickets-container .underline-title::after{
+    bottom: 10px;
+    
+}
+
+.booking-tickets-container input{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #030303;
+    margin-bottom: 20px;
+}
+
+.booking-price-container{
+    box-sizing: border-box;
+    padding: 10px 15px 15px 15px;
+    border: 1px solid #030303;
+}
+
+.booking-price-subtitle{
+    font-family: 'Forum';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+.booking-price-container .tickets-btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.booking-price-container .tickets-btn-container p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.booking-price-container .tickets-btn{
+    min-width: 105px;
+    min-height: 25px;
+    border: 1px solid #030303;
+    width: 105px;
+    height: 25px;
+    margin-bottom: 0;
+}
+
+
+.booking-price-container .tickets-count-btn{
+    background-color: #030303;
+    color: white;
+    width: 33.33%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.booking-price-container .number-ticket{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 33.333%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    
+    
+}
+
+
+.booking-price-container .number-ticket::-webkit-inner-spin-button{
+    display: none;
+}
+
+.tickets-overview-container{
+    max-width: 530px;
+    box-sizing: border-box;
+    padding: 25px 30px;
+    border: 1px solid #030303;
+}
+
+.overview-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.overview-title{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.overview-description{
+    font-size: 22px;
+    font-weight: 500;
+    color: #710707;
+    margin: 0 0 10px 0;
+}
+
+.overview-details{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.overview-details p{
+    margin: 0;
+}
+
+.tickets-price-inf-container{
+    margin-top: 22px;
+}
+
+.tickets-price-inf-line, .total-price-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tickets-count-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.tickets-price-inf-line p:not(.tickets-count-form ){
+    margin: 0;
+    font-size: 22px;
+}
+
+.tickets-price-inf-container .underline-title::after{
+    bottom: -10px;
+}
+
+.tickets-count-form {
+    background-color: #030303;
+    color: white;
+    border-radius: 6px;
+    padding: 0 10px;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.total-price-container p{
+    font-size: 32px;
+}
+
+.total-tickets-price{
+    font-weight: 500;
+}
+
+.booking-form-btn{
+    background-color: #710707;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 22px;
+    padding: 10px 85px;
+    border: none;
+    float: right;
+}
+
+.date-time-form-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+
+
+
+
