@@ -43,37 +43,7 @@ window.onclick = function(e){
 
 
 
-var ticket_price = 20;
-const tickets_count_btn = document.getElementsByClassName('tickets-count-btn');
-const ticket_type_btn = document.getElementsByClassName('ticket-type-button');
-var ticket_input_1 = parseInt(document.getElementById('number-ticket-18').value);
-var ticket_input_2 = parseInt(document.getElementById('number-ticket-65').value);
 
-for (let i = 0; i<tickets_count_btn.length; i++){
-  tickets_count_btn[i].addEventListener('click', function() {
-    ticket_input_1 = parseInt(document.getElementById('number-ticket-18').value);
-    ticket_input_2 = parseInt(document.getElementById('number-ticket-65').value);
-    document.getElementById('tickets-price').innerHTML = `Total € ${(ticket_input_1 + ticket_input_2 / 2) * ticket_price}`;
-})}
-
-for (let i = 0; i < ticket_type_btn.length; i++){
-  ticket_type_btn[i].addEventListener('click', function(){
-    const tickets_radio_btn_1 = document.getElementById('radio-1').checked;
-    const tickets_radio_btn_2 = document.getElementById('radio-2').checked;
-    const tickets_radio_btn_3 = document.getElementById('radio-3').checked;
-    if (tickets_radio_btn_2){
-      ticket_price = 25;
-    }
-    else if (tickets_radio_btn_3){
-      ticket_price = 40
-    }
-    else if (tickets_radio_btn_1){
-      ticket_price = 20
-    }
-
-    document.getElementById('tickets-price').innerHTML =`Total € ${(ticket_input_1 + ticket_input_2 / 2) * ticket_price}` ;
-  })
-}
 
 // ticket_count_btn.onclick = function() {
 //   var ticket_price = 20;
