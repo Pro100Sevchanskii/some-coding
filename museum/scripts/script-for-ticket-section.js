@@ -30,6 +30,20 @@
 //   })
 // }
 
+const form_open_btn = document.querySelector(".tickets-buy-btn")
+const form_container = document.querySelector(".booking-tickets-container")
+const close_form_btn = document.querySelector(".close-form-btn")
+
+form_open_btn.addEventListener('click', function(){
+    form_container.style.display = "flex"
+    document.body.style.overflow = 'hidden';
+})
+
+close_form_btn.addEventListener('click', function(){
+    form_container.style.display = "none"
+    document.body.style.overflow = '';
+})
+
 const tickets_count_inputs_amount = document.querySelectorAll('.amount .number-ticket')
 const tickets_count_inputs_form = document.querySelectorAll('.booking-price-container .number-ticket')
 const ticket_count_btns_amount = document.querySelectorAll('.amount .tickets-count-btn')
@@ -103,9 +117,15 @@ date.addEventListener('input', function(){
     date_p.innerHTML = this.value
 })
 
+date.min = new Date().toISOString().split('T')[0]
+
 time.addEventListener('input', function(){
     time_p.innerHTML = this.value
 })
+
+time.min= "09:00"
+time.max = "18:00"
+time.step = "1800"
 
 type.addEventListener('input', function(){
     type_p.innerHTML = this.value
